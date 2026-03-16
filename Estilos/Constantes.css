@@ -1,0 +1,44 @@
+body {
+    margin: 0%;
+}
+
+/* header de la pagina */
+
+header {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.head {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+/* colores de fono de la pagina */
+
+.color-f{
+  background-color: #003185;
+}
+
+.color-f-secun {
+  background-color: #3D547A;
+}
+
+/* color de la tipografia */
+
+.color-p{
+  color: white
+}
+
+/* estructura de algunos divs*/
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 50%) ;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row;
+}
+
