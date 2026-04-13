@@ -13,6 +13,7 @@ header {
     gap: 1rem;
 }
 
+/* botones */
 .boton-P{
     background-color: black;
     color: white;
@@ -49,16 +50,17 @@ header {
     height: 3rem;
     width: 30rem;
     border-radius: 0.5rem;
-    
 }
 
 .boton-height {
   height: 20rem;
 }
 
+/* texto y colores */
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .color-f{
@@ -73,6 +75,7 @@ a {
   color: white
 }
 
+/* tamaños de bloques */
 .presentacion {
     padding: 50px;
     height: auto;
@@ -81,7 +84,7 @@ a {
 
 .bloques{
   padding: 8rem;
-  width: 50%;
+  width: auto;
 }
 
 .columnas {
@@ -89,11 +92,17 @@ a {
   grid-template-columns: repeat(2, 50%) ;
 }
 
+.columnas-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 33%) ;
+}
+
 .flex {
   display: flex;
   flex-flow: row;
 }
 
+/* imagenes configuracion */
 
 img {
     width: 2rem;
@@ -104,3 +113,4 @@ img {
   height: auto;
   width: 20rem;
 }
+
