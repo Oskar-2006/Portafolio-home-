@@ -76,6 +76,24 @@ header {
   height: 20rem;
 }
 
+.hom {
+  background-color: #001f55;
+  height: 2rem;
+  width: 3rem;
+}
+
+.about {
+  background-color: #001f55;
+  height: 2rem;
+  width: 4rem;
+}
+
+.template {
+  background-color: #001f55;
+  height: 2rem;
+  width: 4rem;
+}
+
 /* texto y colores */
 
 a {
