@@ -8,59 +8,97 @@ header {
 }
 
 .head {
-    display: flex;
-    padding: 2rem;
-    gap: 1rem;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 /* botones */
-.boton-P{
-    background-color: black;
-    color: white;
-    height: 5rem;
-    width: 10rem;
-    border-radius: 1rem;
+.boton-P {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 1rem;
 
 
-  &.boton-P:hover {
+  &:hover {
     background-color: white;
     color: black;
+    transition: 0.3s ease;
+    transform: scale(1.2);
   }    
 }
 
 .boton-2 {
-    background-color: white;
-    color: black;
-    height: 5rem;
-    width: 10rem;
-    border-radius: 1rem;
+  background-color: white;
+  color: black;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 1rem;
 
-  &.boton-2:hover {
+  &:hover {
     background-color: black;
     color: white;
+    transition: 0.3s ease;
+    transform: scale(1.2);
   }
 }
 
-.boton-escri {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.boton-header {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 1rem;
+
+  &:hover {
     background-color: white;
-    color: #ABABAB;
-    height: 3rem;
-    width: 30rem;
-    border-radius: 0.5rem;
+    color: black;
+    transition: 0.3s ease;
+    transform: scale(1.2);
+  }    
+}
+
+
+.boton-escri {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  color: #ABABAB;
+  height: 3rem;
+  width: 30rem;
+  border-radius: 0.5rem;
 }
 
 .boton-height {
   height: 20rem;
 }
 
+.hom {
+  background-color: #001f55;
+  height: 2rem;
+  width: 3rem;
+}
+
+.about {
+  background-color: #001f55;
+  height: 2rem;
+  width: 4rem;
+}
+
+.template {
+  background-color: #001f55;
+  height: 2rem;
+  width: 4rem;
+}
+
 /* texto y colores */
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .color-f{
@@ -75,11 +113,11 @@ a {
   color: white
 }
 
-/* tamaños de bloques */
+/* tamaños sectiones */
 .presentacion {
-    padding: 50px;
-    height: auto;
-    align-items: center;
+  padding: 50px;
+  height: auto;
+  align-items: center;
 }
 
 .bloques{
@@ -105,12 +143,102 @@ a {
 /* imagenes configuracion */
 
 img {
-    width: 2rem;
-    height: fit-content;
+  width: 2rem;
+  height: fit-content;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-p {
   height: auto;
   width: 20rem;
+  max-width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+  .columnas-3 {
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .boton-escri {
+    width: 100%;
+  }
+  
+  .bloques {
+    padding: 4rem 2rem;
+  }
+  
+  .head {
+    padding: 1rem;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .columnas {
+    grid-template-columns: 1fr;
+  }
+  
+  .columnas-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .flex {
+    flex-direction: column;
+  }
+  
+  .boton-P, .boton-2 {
+    width: 100%;
+    height: 4rem;
+  }
+  
+  .boton-header {
+    width: 100%;
+    height: 3rem;
+  }
+  
+  .boton-escri {
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  .boton-height {
+    height: 10rem;
+  }
+  
+  .bloques {
+    padding: 2rem 1rem;
+  }
+  
+  .head {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
 }
 
